@@ -1,0 +1,43 @@
+<br>
+<div class="row">
+    <img src="/assets/fav.svg" alt="Fav Icon" class="center-align" width="200" />
+    <br>
+    <h5>Favorites</h5>
+    <br>
+    <div class="col s12 m12 l12">
+        <div class="responsive-table">
+            <div class="center-align">
+                <a href="#team-favorite" onclick="tabFavorite('favorite_team')"
+                    class="btn-large waves-effect waves-light favorite-color favorite">Team</a>
+                <a href="#match-favorite" onclick="tabFavorite('favorite_match')"
+                    class="btn-large waves-effect waves-light favorite-color favorite">Match</a>
+                <a href="#player-favorite" onclick="tabFavorite('favorite_player')"
+                    class="btn-large waves-effect waves-light favorite-color favorite">Player</a>
+            </div>
+        </div>
+
+        <br>
+        <div class="card card-content" id="favorite-item"> </div>
+    </div>
+</div>
+
+<style>
+    a {
+        text-transform: capitalize !important;
+        font-weight: unset;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .favorite {
+        margin-top: 0;
+    }
+
+    .favorite-color {
+        color: #101d25 !important;
+    }
+</style>

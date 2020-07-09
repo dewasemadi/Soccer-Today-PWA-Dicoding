@@ -1,0 +1,121 @@
+<!-- content here -->
+<div class="row">
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="/assets/1.webp" alt="background"> <!-- random image -->
+                <div class="caption center-align">
+                    <h4 class="bold">UEFA Champions League</h4>
+                    <h6 class="light grey-text text-lighten-3">Get the latest standings, match, player, and etc.</h6>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/2.webp" alt="background"> <!-- random image -->
+                <div class="caption left-align">
+                    <h4 class="bold">What a great day for football</h4>
+                    <h6 class="light grey-text text-lighten-3">All we need is some green grass and a ball</h6>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/3.webp" alt="background"> <!-- random image -->
+                <div class="caption right-align">
+                    <h4 class="bold">Football is a game </h4>
+                    <h6 class="light grey-text text-lighten-3">You play with your mind</h6>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/4.webp" alt="background"> <!-- random image -->
+                <div class="caption left-align">
+                    <h4 class="bold">Football is about sacrifice, dedication, a lot of work,</h4>
+                    <h6 class="light grey-text text-lighten-3">and friendship off the pitch</h6>
+                </div>
+            </li>
+            <li>
+                <img src="/assets/5.webp" alt="background"> <!-- random image -->
+                <div class="caption right-align">
+                    <h4 class="bold">When people succeed, it is because of hard work.</h4>
+                    <h6 class="light grey-text text-lighten-3">Luck has nothing to do with success</h6>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <div class="stand center-align">
+        <img src="/assets/standings.svg" alt="standings icon" width="45">
+        <h5 class="standing center-align">Standings</h5>
+    </div>
+    <div class="break"></div>
+    <div class="col s12 m12 l12" id="standings"></div>
+</div>
+
+
+
+<style>
+    .bold {
+        margin-top: 40px !important;
+    }
+
+    .slides img {
+        z-index: 1;
+    }
+
+    .stand {
+        background-color: #cccfd1;
+        line-height: unset;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -70px !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10 !important;
+        border-radius: 5px;
+        padding: 5px 0px;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .standing {
+        color: #000000 !important;
+        overflow: unset !important;
+        margin-bottom: unset !important;
+    }
+
+    #para1 {
+        color: white !important;
+        font-size: 30px !important;
+    }
+
+    /* mobile version */
+    @media (max-width: 550px) {
+        .stand {
+            display: flex;
+            margin-top: -50px !important;
+        }
+
+        .standing {
+            padding: 10px 0 10px 10px;
+        }
+    }
+
+    /* desktop version */
+    @media (min-width: 550px) {
+        .stand {
+            width: 50%;
+        }
+
+        .row .col {
+            padding: unset !important;
+        }
+
+        .bold {
+            margin-top: 56px !important;
+        }
+
+        .break {
+            padding: 10px 0px;
+        }
+    }
+</style>

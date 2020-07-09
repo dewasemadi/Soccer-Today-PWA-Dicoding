@@ -1,0 +1,231 @@
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.hover:hover {
+    color: #00b69f;
+}
+
+body,
+.sidenav {
+    background-color: #101d25 !important;
+}
+
+.dark {
+    background-color: #232d36 !important;
+}
+
+.favorite-color {
+    background-color: #00b69f !important;
+    color: #101d25 !important;
+    font-weight: bold;
+}
+
+.materialboxed {
+    width: 13%;
+    height: auto;
+}
+
+thead {
+    background-color: #00b69f !important;
+    color: #101d25 !important;
+}
+
+h5 {
+    color: #ffffff !important;
+    text-align: center;
+    margin-top: 0em !important;
+}
+
+.card-content {
+    background-color: #a6adb1 !important;
+    padding: unset !important;
+    box-shadow: unset !important;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+.team-color {
+    color: #101d25 !important;
+}
+
+.brand-logo img {
+    display: flex;
+    padding-top: 13px;
+
+}
+
+.center-logo {
+    left: 43%;
+}
+
+.brand-logo {
+    font-weight: normal !important;
+}
+
+.responsive-table,
+.center-align {
+    overflow: auto;
+}
+
+.loader {
+    background-color: #101d25;
+    box-shadow: unset !important;
+    border-color: unset !important;
+}
+
+.green-waves {
+    font-weight: unset !important;
+}
+
+.green-waves:hover {
+    color: #00b69f !important;
+}
+
+.tabs .tab a {
+    color: #000;
+}
+
+.tabs {
+    overflow-x: hidden;
+}
+
+.card .card-title {
+    font-size: 15px !important;
+}
+
+/*Black color to the text*/
+
+/*Text color on hover*/
+
+/*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color: #101d25 !important;
+}
+
+.slider {
+    height: unset !important;
+}
+
+.indicators {
+    display: none !important;
+}
+
+/*Color of underline*/
+
+/* cek this one */
+/* .row .col {
+    float: none !important;
+} */
+
+.card {
+    margin: 2rem 0 2rem 0 !important;
+    box-shadow: unset !important;
+}
+
+.avatar {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.no-top {
+    margin-top: unset !important;
+}
+
+.no-left {
+    text-align: unset !important;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #00b69f;
+}
+
+.waves-effect {
+    color: #a6adb1 !important;
+}
+
+.love {
+    color: white !important;
+}
+
+
+/* mobile version */
+@media (max-width:573px) {
+    .sidenav li>a {
+        font-size: 15px !important;
+        padding: 0 15px !important;
+        margin: 14px 0px !important;
+    }
+
+    .left {
+        margin-left: 20px !important;
+    }
+
+    .brand-logo img {
+        display: flex;
+        padding-top: 15px;
+        width: 100px;
+    }
+
+    .container,
+    .containerr {
+        width: unset !important;
+    }
+
+    .mySlides img {
+        display: none !important;
+    }
+
+    .brand-logo {
+        font-size: 20px !important;
+    }
+
+    .top {
+        margin-top: 10px;
+    }
+
+    .sidenav {
+        margin-top: 56px;
+    }
+
+    .illus {
+        width: 100%;
+    }
+
+    h5 {
+        margin-bottom: unset !important;
+    }
+}
+
+@media (min-width:700px) {
+    .sidenav li>a {
+        font-size: 15px !important;
+        padding: 0 15px !important;
+        margin: 14px 0px !important;
+    }
+
+    .mySlide {
+        display: unset !important;
+    }
+
+    .waves-effect {
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    table.responsive-table thead tr {
+        display: unset !important;
+        padding: 0 10px 0 0;
+    }
+}

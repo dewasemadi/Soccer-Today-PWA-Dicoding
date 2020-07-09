@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Team Details</title>
+    <meta name="description"
+        content="Soccer Today  is a web-based application platform that contains the latest news related to football in the world" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#101d25" />
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="icon" href="./icon.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- sweet alert area -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless/borderless.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Navigation Area -->
+    <nav class="dark no-shadow fixed" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="/index.html" class="brand-logo center-logo" id="logo-container"><img src="./assets/brand.webp"
+                    alt="Champions League Logo" width="130"></a>
+            <a href="javascript:back()" data-target="nav-mobile">
+                <i class="material-icons left hover">arrow_back</i>
+            </a>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- End Navigation Area -->
+
+    <br>
+    <!-- Start Content Area -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="center-align" style="margin-top: 10px; overflow: hidden !important;">
+                    <img id="crestUrl" width="200" height="200" style="margin-bottom: 20px;">
+                    <h5 id="nameHeader"></h5>
+                </div>
+                <div class="card">
+                    <div class="card-tabs">
+                        <ul class="tabs favorite-color">
+                            <li class="tab col s6 m6 l6"> <a class="active team-color" href="#overview"> Overview </a>
+                            </li>
+                            <li class="tab col s6 m6 l6"> <a class="team-color" href="#squad"> Squad </a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="card-content">
+
+                        <!-- preloader -->
+                        <div class="center-align loader no-shadow" id="preloader">
+                            <div class="progress">
+                                <div class="indeterminate"></div>
+                            </div>
+                        </div>
+
+
+                        <div id="overview">
+                            <table class="striped">
+                                <thead></thead>
+                                <tbody id="tableOverview"></tbody>
+                            </table>
+                        </div>
+
+                        <div id="squad">
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th class="center-align">Num</th>
+                                        <th class="center-align">Name</th>
+                                        <th class="center-align">Position</th>
+                                        <th class="center-align">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableSquad"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Area -->
+    <br>
+    <br>
+    <!-- start favorite icon area -->
+    <div class="fixed-action-btn">
+        <span>
+            <a class="btn-floating btn-large favorite-color no-shadow" id="fabFavorite">
+                <i class="large material-icons waves-effect white-text love no-top" id="fav-icon">favorite_border</i>
+            </a>
+        </span>
+
+    </div>
+    <!-- end favorite icon area -->
+
+    <!-- Start Script Area -->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/helpers.js"></script>
+
+    <script src="js/standings.js"></script>
+    <script src="js/matches.js"></script>
+    <script src="js/teams.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+
+    <script src="/js/teamFav.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <!-- End Script Area -->
+</body>
+
+</html>

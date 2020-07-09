@@ -1,0 +1,23 @@
+{
+  "name": "Soccer Today",
+  "short_name": "Soccer Today",
+  "description": "PWA Footbal App",
+  "start_url": "/index.html",
+  "theme_color": "#101d25",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "Scope": "/",
+  "gcm_sender_id": "835554547434",
+  "splash_pages": null,
+  "icons": [{
+      "src": "./icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
